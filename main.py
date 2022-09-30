@@ -10,7 +10,7 @@ from streamlit_lottie import st_lottie
 
 pd.set_option('display.max_rows', 500)
 
-df = pd.read_csv('C:/Users/cankemaloglu/PycharmProjects/DSMLBC-8/1. Part/persona.csv')
+df = pd.read_csv('persona.csv')
 
 agg_df = df.groupby(["COUNTRY", 'SOURCE', "SEX", "AGE"]).agg({"PRICE": "mean"}).sort_values("PRICE", ascending=False)
 agg_df.head()
