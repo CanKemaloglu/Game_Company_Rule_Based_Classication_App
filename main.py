@@ -48,7 +48,7 @@ agg_df.head()
 
 st.set_page_config(page_title="Gamer Price Guess App", page_icon=":space_invader:")
 
-@st.cache
+
 
 def load_lottieurl(url: str):
     r = requests.get(url)
