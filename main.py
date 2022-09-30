@@ -5,8 +5,8 @@ import requests
 import streamlit as st
 
 from streamlit_lottie import st_lottie
-from streamlit_lottie import st_lottie_spinner
-import matplotlib.pyplot as plt
+
+
 
 pd.set_option('display.max_rows', 500)
 
