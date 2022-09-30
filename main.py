@@ -3,9 +3,8 @@ import pandas as pd
 import requests
 
 import streamlit as st
-
+import time
 from streamlit_lottie import st_lottie
-
 
 
 pd.set_option('display.max_rows', 500)
@@ -118,12 +117,15 @@ with col_a:
 
 if st.button("Guess Price"):
     new_user = f"{country_name.upper()}_{source_name.upper()}_{gender_name.upper()}_{age_cat_choice}"
-    #new_user = "TUR_ANDROID_FEMALE_41_66"
-    #st.write(new_user, agg_df[agg_df["customers_level_based"] == new_user])
-    #st.balloons()
+    with st.spinner('Wait for it...'):
+        time.sleep(2)
+    st.success('Done!')
     agg_df[agg_df["customers_level_based"] == new_user]
 
-
+st.sidebar.header("Hi ✌ , \n I'm Can Kemaloğlu")
+st.sidebar.subheader("Data Analytics & Data Science & Machine Learning Enthusiast")
+st.sidebar.info(f"[My LinkedIn](https://www.linkedin.com/in/ahmet-can-kemaloglu/)")
+st.sidebar.info(f"[My GitHub](https://github.com/CanKemaloglu)")
 
 
 
