@@ -1,6 +1,6 @@
 # Game_Company_Rule_Based_Classication_App
 
-# game_company_rule_based_classification
+
 
 ## Kural Tabanlı Sınıflandırma ile Potansiyel Müşteri Getirisi Hesaplama
 
