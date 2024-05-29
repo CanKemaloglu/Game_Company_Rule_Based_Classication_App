@@ -115,7 +115,7 @@ with col_a:
 ## Yeni Gelen Müşterileri Sınıflandırma ve Gelir Tahmini
 
 
-if st.button("Guess Price"):
+if st.button("Guess User Value"):
     new_user = f"{country_name.upper()}_{source_name.upper()}_{gender_name.upper()}_{age_cat_choice}"
     with st.spinner('Wait for it...'):
         time.sleep(2)
